@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+ // arquivo global de estilo
+  // Um arquivo scss por componente e somente o estilo será local
+  // Aqui altera todos os arquivos
+* {
+    margin: 0;
+    padding: 0;
+}

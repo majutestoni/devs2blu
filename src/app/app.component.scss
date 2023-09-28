@@ -1,0 +1,31 @@
+ //a. para o titulo e defina um tom escuro de fundo e altere o color para um tom claro
+
+ h1{
+   background-color: black; // altera o fundo
+   color: white; // altera a cor das letras
+ }
+// Seu nome deve estar com uma font-family diferente
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+// Crie um design para o botão
+button{
+    background-color: bisque;
+    border-radius: 16px; // deixa as bordas arredondadas
+    width: 100px;
+    height: 3vh;
+    border: none;
+}
+// ao passar o cursor o cursor por cima
+// é a alteração que deve ocorrer
+button:hover {
+    background-color: rgb(199, 158, 108);
+}
+
+
+
+
+
+
+
