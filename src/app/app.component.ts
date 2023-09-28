@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     // sysout versão javaScript
     console.log('Hello world');
+     this.calculoMedia(10,15,20)
+     this.calculoMedia(10,10,10)
   }
   /*
 : Cálculo de Média 
@@ -28,6 +30,7 @@ Dificultando: passe como vetor */
   private calculoMedia(numUm: number, numDois: number, numTres: number): void {
     // pq const? a variavel média não será alterada
     const media: number = (numUm + numDois + numTres) / 3;
+    console.log('media' + media)
   }
 
   /*
