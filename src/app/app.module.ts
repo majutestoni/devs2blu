@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderModule } from './componentes/header/header.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // importo o modulo (escopo ao qual está inserido 
+    // o meu componente o qual eu quero mostrar)
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
