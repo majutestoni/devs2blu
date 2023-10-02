@@ -1,0 +1,32 @@
+ngb-carousel {
+  img {
+    width: 100%;
+  }
+}
+
+.filtro {
+  width: 220px;
+  height: 172px;
+  background: #fff;
+
+  h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  mat-icon{
+    margin-left: 1rem;
+  }
+
+  section{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}

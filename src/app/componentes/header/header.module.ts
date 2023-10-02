@@ -4,7 +4,7 @@ import { HeaderComponent } from './header.component';
 
 
 // Modulo importar bibliotecas dentro do modulo
-// e essas bibliotecas serão utilizadas pelos 
+// e essas bibliotecas serão utilizadas pelos
 // componexnentes que foram declarados
 
 // Meu modulo pode ter varios componentes
@@ -15,9 +15,9 @@ import { HeaderComponent } from './header.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
-  // Exportar o componente para ser visto por outros 
+  // Exportar o componente para ser visto por outros
   // componentes - private para publico
   exports: [HeaderComponent]
 })

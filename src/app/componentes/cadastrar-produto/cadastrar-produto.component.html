@@ -1,0 +1,39 @@
+<body>
+  <mat-card>
+    <mat-card-header>Cadastro de produto</mat-card-header>
+    <mat-card-content>
+
+      <form [formGroup]="formGroup" class="row">
+        <mat-form-field class="col-6"  appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Name">
+        </mat-form-field>
+        <mat-form-field class="col-6" appearance="outline">
+          <mat-label>Code</mat-label>
+          <input matInput placeholder="Code">
+        </mat-form-field>
+        <mat-form-field class="col-6" appearance="outline">
+          <mat-label>CostPrice</mat-label>
+          <input matInput placeholder="CostPrice">
+        </mat-form-field>
+        <mat-form-field class="col-6" appearance="outline">
+          <mat-label>SalePrice</mat-label>
+          <input matInput placeholder="SalePrice">
+        </mat-form-field>
+        <mat-form-field class="col-6" appearance="outline">
+          <mat-label>Preparation Time</mat-label>
+          <input matInput placeholder="Preparation Time">
+        </mat-form-field>
+        <mat-form-field class="col-6" appearance="outline">
+          <mat-label>ProductType</mat-label>
+          <input matInput placeholder="ProductType">
+        </mat-form-field>
+        <mat-form-field class="col-12" appearance="outline">
+          <mat-label>Description</mat-label>
+          <textarea matInput placeholder="Description"></textarea>
+        </mat-form-field>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+</body>
