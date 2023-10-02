@@ -10,7 +10,11 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   // 2 - Criar a rota de home
   // defino rota e defino o componente
-  { path: 'home', component: HomeComponent },
+  {
+    path: 'home',
+    loadChildren: () =>
+      import('./componentes/home/home.module').then((m) => m.HomeModule),
+  },
 
   {
     path: 'novo',

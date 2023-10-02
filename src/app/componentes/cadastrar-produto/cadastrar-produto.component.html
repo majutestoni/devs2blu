@@ -1,10 +1,13 @@
 <form [formGroup]="formularioProduto">
     <!-- formControlName = algum atributo que foi construido
                             para o formulario  -->
-    <input type="text" formControlName="titulo">
-    <input type="text" formControlName="autor">
-    <input type="text" formControlName="ano">
-    <input type="number" formControlName="price">
-
-    <button type="submit" (click)="teste()"></button>
+    <input type="text" formControlName="name">
+    <input type="text" formControlName="description">
+    <input type="text" formControlName="code">
+    <input type="text" formControlName="costPrice">
+    <input type="text" formControlName="salePrice">
+    <input type="text" formControlName="preparationTime">
+   <input type="text" formControlName="productType">
+   <!-- ENUM no back - select no front -->
+<button type="submit" (click)="enviarFormulario()">Salvar</button>
 </form>

@@ -25,16 +25,19 @@ export class CadastrarProdutoComponent implements OnInit {
     // 2- construir os atributos do formulario
     this.formularioProduto = this.formBuilder.group({
       // inputs(atributos) do nosso formulario
-      titulo: '',
-      autor: '',
-      ano: '',
-      price: 0
+      name: '',
+      description: '',
+      code: '',
+      costPrice: '',
+      salePrice: '',
+      preparationTime: '',
+      productType: '',
     })
-
     // 3 - Criar no html o formulario
   }
 
-  teste(){
-    
+  enviarFormulario(){
+    // ver os dados que foram preenchido
+    console.log(this.formularioProduto.value)
   }
 }
