@@ -17,4 +17,19 @@ body {
     width: 100%;
     padding: 16px;
   }
+
+  mat-card-content {
+    margin-bottom: 0;
+  }
+
+  mat-card-footer{
+    flex-direction: row-reverse;
+    display: flex;
+padding-bottom: 10px;
+    padding-right: 3rem;
+  }
+  button {
+    color: #fff;
+    background-color: #501800;
+  }
 }

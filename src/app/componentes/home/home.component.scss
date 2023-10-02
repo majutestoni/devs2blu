@@ -4,8 +4,11 @@ ngb-carousel {
   }
 }
 
+.parte-de-baixo{
+  display: flex;
+}
 .filtro {
-  width: 220px;
+  width: 140px;
   height: 172px;
   background: #fff;
 
@@ -29,4 +32,8 @@ ngb-carousel {
     display: flex;
     flex-direction: column;
   }
+}
+
+
+.lista{
 }

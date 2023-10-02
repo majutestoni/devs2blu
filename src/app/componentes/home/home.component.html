@@ -29,8 +29,8 @@
 </ngb-carousel>
 
 
-<div class="parte-de-baixo mt-5">
-  <div class="filtro">
+<div class="parte-de-baixo mt-5 row">
+  <div class="filtro col-lg-3">
     <div class="d-flex pt-2">
       <mat-icon >filter_list</mat-icon>
       <h3 >Filtro</h3>
@@ -42,7 +42,9 @@
     </section>
   </div>
 
-  <div class="lista">
+  <div class="lista col-lg-9">
     <button (click)="openDialog()" mat-button color="primary">Open</button>
+
+    <app-lista-produto></app-lista-produto>
   </div>
 </div>
