@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public bntInicio: string = 'Inicio'
+  public bntCadastras: string = 'Cadastrar produto'
 
   constructor() { }
 

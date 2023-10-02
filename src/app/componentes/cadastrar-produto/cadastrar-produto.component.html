@@ -1,0 +1,10 @@
+<form [formGroup]="formularioProduto">
+    <!-- formControlName = algum atributo que foi construido
+                            para o formulario  -->
+    <input type="text" formControlName="titulo">
+    <input type="text" formControlName="autor">
+    <input type="text" formControlName="ano">
+    <input type="number" formControlName="price">
+
+    <button type="submit" (click)="teste()"></button>
+</form>
