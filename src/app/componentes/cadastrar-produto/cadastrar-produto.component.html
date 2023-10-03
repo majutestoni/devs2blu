@@ -7,7 +7,17 @@
     <input type="text" formControlName="costPrice">
     <input type="text" formControlName="salePrice">
     <input type="text" formControlName="preparationTime">
-   <input type="text" formControlName="productType">
+  
+    <select formControlName="productType">
+        <option value="DESSERT">DESSERT</option>
+        <option value="DRINK">DRINK</option>
+        <option value="SNAK">SNAK</option>
+    </select>
    <!-- ENUM no back - select no front -->
 <button type="submit" (click)="enviarFormulario()">Salvar</button>
 </form>
+<!-- Omite ou mostra elementos (tags) do html conforme condição -->
+<!-- expression - sempre vai ser um atributo atributo na classe -->
+<h5> Condição do meu ngIf: {{mostrar}}</h5>
+<h5 *ngIf="mostrar == true" > Teste com ngIf </h5>
+
