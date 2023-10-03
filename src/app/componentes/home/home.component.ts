@@ -11,7 +11,7 @@ import { ModalComponent } from 'src/app/shared/modal/modal.component';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public dialog: MatDialog){
+  constructor(){
 
   }
 
@@ -19,12 +19,6 @@ export class HomeComponent implements OnInit {
     console.log('oi')
   }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(ModalComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log();
-    });
-  }
 
 }

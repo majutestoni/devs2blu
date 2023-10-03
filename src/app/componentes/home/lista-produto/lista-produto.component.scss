@@ -1,0 +1,45 @@
+.lista {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  padding: 16px;
+}
+
+.lado-direito {
+  width: 70%;
+
+  h1 {
+    margin-bottom: 0;
+
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+
+  span {
+    color: #414141;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 50%;
+  }
+}
+
+.lado-esquerdo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  h3 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  mat-icon{
+
+  }
+}

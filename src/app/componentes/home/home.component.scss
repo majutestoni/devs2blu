@@ -6,9 +6,10 @@ ngb-carousel {
 
 .parte-de-baixo{
   display: flex;
+  width: 100%;
 }
 .filtro {
-  width: 140px;
+  width: 20%;
   height: 172px;
   background: #fff;
 
@@ -36,4 +37,5 @@ ngb-carousel {
 
 
 .lista{
+  width: 80%;
 }
