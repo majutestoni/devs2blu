@@ -12,6 +12,8 @@ export class CadastrarProdutoComponent implements OnInit {
   // trabalhando com diretivas
   public mostrar: boolean = false;
 
+  public productType: string[] = ['DESSERT', 'DRINK', 'SNAK']
+
   // Autowired
   // Injetando bibliotecas
   constructor(private formBuilder: FormBuilder) {}

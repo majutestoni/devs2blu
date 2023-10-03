@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './componentes/header/header.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialImportsModule } from './shared/material-imports/material-imports.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,11 @@ import { HeaderModule } from './componentes/header/header.module';
     AppRoutingModule,
     // importo o modulo (escopo ao qual está inserido 
     // o meu componente o qual eu quero mostrar)
-    HeaderModule
+    HeaderModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    MaterialImportsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

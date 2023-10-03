@@ -1,24 +1,30 @@
 <form [formGroup]="formularioProduto">
-    <!-- formControlName = algum atributo que foi construido
+  <!-- formControlName = algum atributo que foi construido
                             para o formulario  -->
-    <input type="text" formControlName="name">
-    <input type="text" formControlName="description">
-    <input type="text" formControlName="code">
-    <input type="text" formControlName="costPrice">
-    <input type="text" formControlName="salePrice">
-    <input type="text" formControlName="preparationTime">
-  
-    <select formControlName="productType">
-        <option value="DESSERT">DESSERT</option>
-        <option value="DRINK">DRINK</option>
-        <option value="SNAK">SNAK</option>
-    </select>
-   <!-- ENUM no back - select no front -->
-<button type="submit" (click)="enviarFormulario()">Salvar</button>
+  <input type="text" formControlName="name" />
+  <input type="text" formControlName="description" />
+  <input type="text" formControlName="code" />
+  <input type="text" formControlName="costPrice" />
+  <input type="text" formControlName="salePrice" />
+  <input type="text" formControlName="preparationTime" />
+
+  <select formControlName="productType">
+    <option *ngFor="let product of productType" [value]="product">
+      {{ product }}
+    </option>
+  </select>
+
+  <!-- ENUM no back - select no front -->
+  <button mat-button color="primary" (click)="enviarFormulario()">
+    Primary
+  </button>
 </form>
 <!-- Omite ou mostra elementos (tags) do html conforme condição -->
 <!-- expression - sempre vai ser um atributo atributo na classe -->
-<h5> Condição do meu ngIf: {{mostrar}}</h5>
-<button (click)="mudarEstado()"> Click </button>
-<h5 *ngIf="mostrar == true" > Teste com ngIf </h5>
+<h5>Condição do meu ngIf: {{ mostrar }}</h5>
+<button (click)="mudarEstado()">Click</button>
+<h5 *ngIf="mostrar == true">Teste com ngIf</h5>
 
+<ngb-alert >
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
