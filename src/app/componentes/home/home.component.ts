@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // Criando um vetor(objeto) - funciona igual ArrayList
+  public listaDeTarefas: string[] = ['Cozinhar', 'ler', 'estudar']
+
+
   constructor() { }
 
   ngOnInit(): void {
