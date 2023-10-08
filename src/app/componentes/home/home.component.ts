@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ProdutoService } from 'src/app/@core/services/produto.service';
-import { ModalComponent } from 'src/app/shared/modal/modal.component';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +6,8 @@ import { ModalComponent } from 'src/app/shared/modal/modal.component';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private produtoService: ProdutoService) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.produtoService.listAll().subscribe((produtos) => console.log(produtos));
   }
 }
