@@ -21,5 +21,7 @@ export class HomeComponent implements OnInit {
 
   itemExcluido(){
     this.produtoService.listAll().subscribe((produtos) => this.produtos = produtos);
+
+    alert('Produto deletado!')
   }
 }

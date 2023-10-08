@@ -32,9 +32,10 @@ export class CadastrarProdutoComponent implements OnInit {
   }
 
   public salvar() {
-    console.log(this.formGroup.value)
-    this.produtoService
-      .createProduct(this.formGroup.value)
-      .subscribe((p) => console.log(p));
+    console.log(this.formGroup.value);
+    this.produtoService.createProduct(this.formGroup.value).subscribe((p) => {
+      alert('Produto criado!');
+      this.formGroup.reset();
+    });
   }
 }
