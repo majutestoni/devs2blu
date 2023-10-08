@@ -1,15 +1,18 @@
 <div class="lista">
   <div class="lado-direito">
-    <h1>Nome da Comida</h1>
+    <h1>{{nome}}</h1>
     <span
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a
-      elementum nisl. Sed convallis quis massa vitae malesuada. Cras convallis
+      >{{descricao}}
     </span>
   </div>
   <div class="lado-esquerdo">
-    <h3>R$ 99,99</h3>
+    <h3>R$ {{valor}}</h3>
     <button (click)="openDialog()" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
       <mat-icon>more_vert</mat-icon>
     </button>
+    <button (click)="deletarProduto()" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+      <mat-icon>delete_forever</mat-icon>
+    </button>
+
   </div>
 </div>

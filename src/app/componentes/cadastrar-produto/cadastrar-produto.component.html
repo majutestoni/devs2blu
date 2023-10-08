@@ -2,42 +2,44 @@
   <mat-card>
     <mat-card-header>Cadastro de produto</mat-card-header>
     <mat-card-content>
-
       <form [formGroup]="formGroup" class="row">
-        <mat-form-field class="col-6"  appearance="outline">
+        <mat-form-field class="col-6" appearance="outline">
           <mat-label>Name</mat-label>
-          <input matInput placeholder="Name">
+          <input matInput placeholder="Name" formControlName="name" />
         </mat-form-field>
         <mat-form-field class="col-6" appearance="outline">
           <mat-label>Code</mat-label>
-          <input matInput placeholder="Code">
+          <input matInput placeholder="Code" formControlName="code" />
         </mat-form-field>
         <mat-form-field class="col-6" appearance="outline">
           <mat-label>CostPrice</mat-label>
-          <input matInput placeholder="CostPrice">
+          <input matInput placeholder="CostPrice" formControlName="costPrice" />
         </mat-form-field>
         <mat-form-field class="col-6" appearance="outline">
           <mat-label>SalePrice</mat-label>
-          <input matInput placeholder="SalePrice">
+          <input matInput placeholder="SalePrice" formControlName="salePrice" />
         </mat-form-field>
         <mat-form-field class="col-6" appearance="outline">
           <mat-label>Preparation Time</mat-label>
-          <input matInput placeholder="Preparation Time">
+          <input matInput placeholder="Preparation"  formControlName="preparationTime" />
         </mat-form-field>
         <mat-form-field class="col-6" appearance="outline">
           <mat-label>ProductType</mat-label>
-          <input matInput placeholder="ProductType">
+          <mat-select placeholder="ProductType" formControlName="productType">
+            <mat-option *ngFor="let food of opcoesProdusto" [value]="food">
+              {{ food }}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
+
         <mat-form-field class="col-12" appearance="outline">
           <mat-label>Description</mat-label>
-          <textarea matInput placeholder="Description"></textarea>
+          <textarea formControlName="description" matInput placeholder="Description"></textarea>
         </mat-form-field>
       </form>
-
     </mat-card-content>
     <mat-card-footer>
-      <button  mat-button color="primary">Salvar</button>
-
+      <button (click)="salvar()" mat-button color="primary">Salvar</button>
     </mat-card-footer>
   </mat-card>
 </body>

@@ -1,0 +1,18 @@
+h1 {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.footer {
+  flex-direction: row-reverse;
+  display: flex;
+  padding-bottom: 10px;
+  padding-right: 3rem;
+}
+button {
+  color: #fff;
+  background-color: #501800;
+}

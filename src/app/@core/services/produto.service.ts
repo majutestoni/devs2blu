@@ -15,4 +15,11 @@ export class ProdutoService {
   public listAll(): Observable<ProductModel[]> {
     return this.http.get<ProductModel[]>(`${this.urlBase}`);
   }
+  public createProduct(produto: ProductModel): Observable<number> {
+    return this.http.post<number>(`${this.urlBase}`, produto);
+  }
+
+  public deleteProduct(id: number): Observable<any> {
+    return this.http.delete(`${this.urlBase}/${id}`);
+  }
 }

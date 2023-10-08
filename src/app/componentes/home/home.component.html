@@ -43,7 +43,8 @@
   </div>
 
   <div class="lista col-9">
-
-    <app-lista-produto></app-lista-produto>
+<div *ngFor="let item of produtos" class="mt-2">
+    <app-lista-produto (excluido)="itemExcluido()" [produto]="item" [descricao]="item.description" [nome]="item.name" [valor]="item.salePrice"></app-lista-produto>
+  </div>
   </div>
 </div>

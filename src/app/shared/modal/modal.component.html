@@ -1,7 +1,63 @@
-<h1 mat-dialog-title>Delete file</h1>
+<h1 mat-dialog-title>Detalhes</h1>
 <div mat-dialog-content>
-  Would you like to delete cat.jpeg?
+  <form [formGroup]="formGroup" class="row">
+    <mat-form-field class="col-6" appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput readonly placeholder="Name" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field class="col-6" appearance="outline">
+      <mat-label>Code</mat-label>
+      <input matInput readonly placeholder="Code" formControlName="code" />
+    </mat-form-field>
+    <mat-form-field class="col-6" appearance="outline">
+      <mat-label>CostPrice</mat-label>
+      <input
+        matInput
+        readonly
+        placeholder="CostPrice"
+        formControlName="costPrice"
+      />
+    </mat-form-field>
+    <mat-form-field class="col-6" appearance="outline">
+      <mat-label>SalePrice</mat-label>
+      <input
+        matInput
+        readonly
+        placeholder="SalePrice"
+        formControlName="salePrice"
+      />
+    </mat-form-field>
+    <mat-form-field class="col-6" appearance="outline">
+      <mat-label>Preparation Time</mat-label>
+      <input
+        matInput
+        readonly
+        placeholder="Preparation"
+        formControlName="preparationTime"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="col-6" appearance="outline">
+      <mat-label>productType</mat-label>
+      <input
+        matInput
+        readonly
+        placeholder="Preparation"
+        formControlName="productType"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="col-12" appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea
+        formControlName="description"
+        matInput
+        readonly
+        placeholder="Description"
+      ></textarea>
+    </mat-form-field>
+  </form>
 </div>
-<div mat-dialog-actions>
-  <button mat-button color="primary">Primary</button>
+<div mat-dialog-actions class="footer">
+  <button (click)="onNoClick()" mat-button>Fechar</button>
 </div>
