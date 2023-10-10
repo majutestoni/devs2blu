@@ -5,6 +5,7 @@ import { CadastrarProdutoRoutingModule } from './cadastrar-produto-routing.modul
 import { CadastrarProdutoComponent } from './cadastrar-produto.component';
 import { MaterialExportModule } from '../shared/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServicesModule } from 'src/app/@core/services/services.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CadastrarProdutoRoutingModule,
     MaterialExportModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ServicesModule
   ]
 })
 export class CadastrarProdutoModule { }

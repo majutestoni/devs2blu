@@ -18,8 +18,7 @@ export class HomeComponent implements OnInit {
       // produtosVemDoBack pode ter qualquer nome
       .subscribe((produtosVemDoBack) => {
         this.listaDeProdutos = produtosVemDoBack
-
-     
+        // programar
       });
   }
 }
