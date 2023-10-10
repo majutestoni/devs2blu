@@ -44,6 +44,15 @@
 
   <div class="lista col-9">
 
+
     <app-lista-produto></app-lista-produto>
+<!-- Apresentem o valor e a descrição de cada produto -->
+    <div *ngFor="let produto of listaDeProdutos">
+
+      <h3>{{produto.name}}</h3>
+      <span>{{produto.description}}</span>
+      <span>{{produto.costPrice}}</span>
+
+    </div>
   </div>
 </div>
